@@ -1,6 +1,6 @@
 {
   "name": "crossencoder",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cross Encoder for SentencePiece",
   "main": "index.js",
   "scripts": {
