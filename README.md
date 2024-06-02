@@ -13,6 +13,8 @@ import { CrossEncoder } from 'crossencoder';
 
 const encoder = new CrossEncoder('./spm.model');
 
+await encoder.loadModel()
+
 const ids = await encoder.encode("a", [
   "a b",
   "a b c",
