@@ -16,3 +16,9 @@ const ids = await encoder.encode("a", [
   "a b c",
 ])
 ```
+
+### Inspiration
+
+This library is inspired by the following libraries:
+
+https://github.com/JanKaul/sentencepiece
