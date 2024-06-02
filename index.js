@@ -4,7 +4,7 @@ class CrossEncoder {
   constructor (modelPath) {
     this.modelPath = modelPath
     this.spp = new sentencePiece.SentencePieceProcessor()
-    this.loadModel().then(() => console.log('Model loaded'))
+    this.loadModel()
   }
 
   async loadModel () {
