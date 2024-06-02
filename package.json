@@ -1,0 +1,21 @@
+{
+  "name": "crossencoder",
+  "version": "1.0.0",
+  "description": "Cross Encoder for SentencePiece",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "standard",
+    "lint:fix": "standard --fix index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjmacarthy/crossencoder"
+  },
+  "author": "rjmacarthy",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "standard": "^17.1.0"
+  }
+}
