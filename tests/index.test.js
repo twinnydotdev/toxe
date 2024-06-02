@@ -5,8 +5,8 @@ describe("CrossEncoder", () => {
   let encoder;
 
   beforeAll(async () => {
-    encoder = new CrossEncoder(path.join(__dirname, "spm.model"));
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    encoder = new CrossEncoder(path.join(__dirname, "spm.model"))
+    await encoder.loadModel();
   });
 
   test("Encodes a sample correctly", async () => {

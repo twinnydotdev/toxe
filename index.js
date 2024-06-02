@@ -4,11 +4,12 @@ class CrossEncoder {
   constructor (modelPath) {
     this.modelPath = modelPath
     this.spp = new sentencePiece.SentencePieceProcessor()
-    this.loadModel()
+    return this
   }
 
   async loadModel () {
     await this.spp.load(this.modelPath)
+    return this.spp
   }
 
   pad (length, ids) {

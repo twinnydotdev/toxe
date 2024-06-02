@@ -17,5 +17,8 @@
   "devDependencies": {
     "jest": "^29.7.0",
     "standard": "^17.1.0"
+  },
+  "dependencies": {
+    "crossencoder": "^1.0.2"
   }
 }
