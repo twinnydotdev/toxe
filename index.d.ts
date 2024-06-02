@@ -3,7 +3,7 @@ declare module "crossencoder" {
   export class CrossEncoder {
     private modelPath;
     private spp;
-    constructor(modelPath: string): CrossEncoder
+    constructor(modelPath: string): CrossEncoder;
     loadModel(): Promise<typeof spp>;
     pad(length: number, ids: number[]): number[];
     encodeSample(sample: string): Promise<number[]>;
