@@ -1,6 +1,6 @@
 /// <reference types="node" />
 declare module "crossencoder" {
-  export class CrossEncdoder {
+  export class CrossEncoder {
     private modelPath;
     private spp;
     constructor(modelPath: string);
