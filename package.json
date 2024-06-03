@@ -1,6 +1,6 @@
 {
   "name": "toxe",
-  "version": "1.0.11",
+  "version": "1.1.0",
   "description": "SentencePiece Tokenizer for CrossEncoders",
   "main": "index.js",
   "scripts": {
