@@ -1,19 +1,19 @@
-## txe
+## toxe
 
 ### Install
 
 ```
-npm i txe
+npm i toxe
 ```
 
 ### Usage
 
 ```
-import { Txe } from 'txe';
+import { Txe } from 'toxe';
 
-const txe = new Txe('./spm.model');
+const toxe = new Txe('./spm.model');
 
-const ids = await txe.encode("a", [
+const ids = await toxe.encode("a", [
   "a b",
   "a b c",
 ]);

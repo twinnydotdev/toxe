@@ -1,9 +1,9 @@
 /// <reference types="node" />
-declare module "txe" {
-  export class Txe {
+declare module "toxe" {
+  export class Toxe {
     private modelPath;
     private spp;
-    constructor(modelPath: string): Txe;
+    constructor(modelPath: string): Toxe;
     loadModel(): Promise<typeof spp>;
     pad(length: number, ids: number[]): number[];
     encodeSample(sample: string): Promise<number[]>;

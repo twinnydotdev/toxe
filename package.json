@@ -1,5 +1,5 @@
 {
-  "name": "txe",
+  "name": "toxe",
   "version": "1.0.7",
   "description": "SentencePiece Tokenizer for CrossEncoders",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rjmacarthy/txe"
+    "url": "git+https://github.com/rjmacarthy/toxe"
   },
   "author": "rjmacarthy",
   "license": "Apache-2.0",
@@ -19,6 +19,6 @@
     "standard": "^17.1.0"
   },
   "dependencies": {
-    "txe": "^1.0.2"
+    "toxe": "^1.0.2"
   }
 }

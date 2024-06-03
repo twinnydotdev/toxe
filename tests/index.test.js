@@ -1,15 +1,15 @@
-const { Txe } = require("../index");
+const { Txe: Toxe } = require("../index");
 const path = require("path");
 
-describe("Txe", () => {
-  let txe;
+describe("Toxe", () => {
+  let toxe;
 
   beforeAll(async () => {
-    txe = new Txe(path.join(__dirname, "spm.model"))
+    toxe = new Toxe(path.join(__dirname, "spm.model"))
   });
 
   test("Encodes a sample correctly", async () => {
-    const ids = await txe.encodeSample("This is a sample.");
+    const ids = await toxe.encodeSample("This is a sample.");
     expect(ids).toEqual([
       13, 1, 4398,
       25, 21, 5717,
@@ -18,17 +18,17 @@ describe("Txe", () => {
   });
 
   test("Encodes samples correctly", async () => {
-    const ids = await txe.encodeSamples(["Sample 1", "Sample 2"]);
+    const ids = await toxe.encodeSamples(["Sample 1", "Sample 2"]);
     expect(ids).toEqual([[13, 1, 765, 5106, 137], [13, 1, 765, 5106, 172]]);
   });
 
   test("Pads samples correctly", () => {
-    const paddedSamples = txe.pad(5, [1, 2, 3]);
+    const paddedSamples = toxe.pad(5, [1, 2, 3]);
     expect(paddedSamples).toEqual([1, 2, 3, 0, 0]);
   });
 
   test("Encodes a sample and samples correctly", async () => {
-    const ids = await txe.encode("a", [
+    const ids = await toxe.encode("a", [
       "a b",
       "a b c",
     ]);
