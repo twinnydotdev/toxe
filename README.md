@@ -9,7 +9,7 @@ npm i toxe
 ### Usage
 
 ```
-import { Txe } from 'toxe';
+import { Toxe } from 'toxe';
 
 const toxe = new Txe('./spm.model');
 
