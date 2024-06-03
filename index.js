@@ -30,12 +30,12 @@ class Toxe {
     return paddedSamples
   }
 
-  async encode (sample, samples) {
-    if (!this.loaded) await this.loadModel()
-    const sampleIds = await this.encodeSample(sample)
-    const paddedSamples = await this.encodeSamples(samples)
-    const ids = [1, ...sampleIds, 2, ...paddedSamples.flat(), 2]
-    return ids
+  async encode(sample, samples) {
+    const sampleIds = await this.encodeSample(sample);
+    const paddedSamples = await this.encodeSamples(samples);
+    const ids = paddedSamples
+      .flatMap(ids => [1, ...sampleIds, 2, ...ids, 2]);
+    return ids;
   }
 }
 
