@@ -1,6 +1,6 @@
 const sentencePiece = require('./vendor/sentencepiece')
 
-class Xt {
+class Txe {
   constructor (modelPath) {
     this.modelPath = modelPath
     this.spp = new sentencePiece.SentencePieceProcessor()
@@ -40,5 +40,5 @@ class Xt {
 }
 
 module.exports = {
-  Xt
+  Txe
 }

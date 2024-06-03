@@ -1,19 +1,19 @@
-## xt
+## txe
 
 ### Install
 
 ```
-npm i xt
+npm i txe
 ```
 
 ### Usage
 
 ```
-import { Xt } from 'xt';
+import { Txe } from 'txe';
 
-const xt = new Xt('./spm.model');
+const txe = new Txe('./spm.model');
 
-const ids = await xt.encode("a", [
+const ids = await txe.encode("a", [
   "a b",
   "a b c",
 ]);
