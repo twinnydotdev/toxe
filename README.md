@@ -6,27 +6,20 @@
 npm i xt
 ```
 
-### Usage (Tokenizer)
+### Usage
 
 ```
-import { CrossEncoder } from 'xt';
+import { Xt } from 'xt';
 
-const encoder = new CrossEncoder('./spm.model');
+const xt = new Xt('./spm.model');
 
-await encoder.loadModel()
-
-const ids = await encoder.encode("a", [
+const ids = await xt.encode("a", [
   "a b",
   "a b c",
 ]);
 ```
 
-### Inspiration
-
-With credit to:
+### Credits
 
 https://github.com/JanKaul/sentencepiece
 
-### Todo
-
-- Add inference method or rename package 
