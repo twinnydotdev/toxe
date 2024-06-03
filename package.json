@@ -1,6 +1,6 @@
 {
   "name": "xt",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "SentencePiece Tokenizer for CrossEncoders",
   "main": "index.js",
   "scripts": {
