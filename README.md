@@ -6,7 +6,7 @@
 npm i crossencoder
 ```
 
-### Usage
+### Usage (Tokenizer)
 
 ```
 import { CrossEncoder } from 'crossencoder';
