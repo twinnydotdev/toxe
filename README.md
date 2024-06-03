@@ -1,15 +1,15 @@
-## crossencoder
+## xt
 
 ### Install
 
 ```
-npm i crossencoder
+npm i xt
 ```
 
 ### Usage (Tokenizer)
 
 ```
-import { CrossEncoder } from 'crossencoder';
+import { CrossEncoder } from 'xt';
 
 const encoder = new CrossEncoder('./spm.model');
 

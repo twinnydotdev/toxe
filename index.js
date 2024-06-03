@@ -1,6 +1,6 @@
 const sentencePiece = require('./vendor/sentencepiece')
 
-class CrossEncoder {
+class Xt {
   constructor (modelPath) {
     this.modelPath = modelPath
     this.spp = new sentencePiece.SentencePieceProcessor()
@@ -37,5 +37,5 @@ class CrossEncoder {
 }
 
 module.exports = {
-  CrossEncoder
+  Xt
 }

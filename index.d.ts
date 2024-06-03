@@ -1,9 +1,9 @@
 /// <reference types="node" />
-declare module "crossencoder" {
-  export class CrossEncoder {
+declare module "xt" {
+  export class Xt {
     private modelPath;
     private spp;
-    constructor(modelPath: string): CrossEncoder;
+    constructor(modelPath: string): Xt;
     loadModel(): Promise<typeof spp>;
     pad(length: number, ids: number[]): number[];
     encodeSample(sample: string): Promise<number[]>;

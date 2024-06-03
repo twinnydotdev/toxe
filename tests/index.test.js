@@ -1,11 +1,11 @@
-const { CrossEncoder } = require("../index");
+const { Xt } = require("../index");
 const path = require("path");
 
-describe("CrossEncoder", () => {
+describe("Xt", () => {
   let encoder;
 
   beforeAll(async () => {
-    encoder = new CrossEncoder(path.join(__dirname, "spm.model"))
+    encoder = new Xt(path.join(__dirname, "spm.model"))
     await encoder.loadModel();
   });
 
