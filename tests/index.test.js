@@ -1,4 +1,4 @@
-const { Txe: Toxe } = require("../index");
+const { Toxe } = require("../index");
 const path = require("path");
 
 describe("Toxe", () => {
