@@ -26,3 +26,7 @@ const ids = await encoder.encode("a", [
 With credit to:
 
 https://github.com/JanKaul/sentencepiece
+
+# Todo
+
+- Add inference method or rename package 
