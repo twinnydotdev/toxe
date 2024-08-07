@@ -11,7 +11,7 @@ npm i toxe
 ```
 import { Toxe } from 'toxe';
 
-const toxe = new Txe('./spm.model');
+const toxe = new Toxe('./spm.model');
 
 const ids = await toxe.encode("a", [
   "a b",
