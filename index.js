@@ -1,7 +1,7 @@
 const sentencePiece = require('./vendor/sentencepiece')
 
 class Toxe {
-  constructor (modelPath, config) {
+  constructor (modelPath, config = {}) {
     this.config = config
     this.modelPath = modelPath
     this.spp = new sentencePiece.SentencePieceProcessor()
