@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "lint": "standard",
-    "lint:fix": "standard --fix index.js"
+    "lint:fix": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "jest": "^29.7.0",
     "standard": "^17.1.0"
   },
-  "dependencies": {
-    "toxe": "^1.0.2"
+  "standard": {
+    "env": [ "jest" ]
   }
 }

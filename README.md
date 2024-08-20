@@ -22,7 +22,3 @@ const ids = await toxe.encode("a", [
 ### Credits
 
 https://github.com/JanKaul/sentencepiece
-
-### TODO
-
-Support passing config.

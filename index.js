@@ -1,7 +1,8 @@
 const sentencePiece = require('./vendor/sentencepiece')
 
 class Toxe {
-  constructor (modelPath) {
+  constructor (modelPath, config) {
+    this.config = config
     this.modelPath = modelPath
     this.spp = new sentencePiece.SentencePieceProcessor()
     this.loaded = false
@@ -30,12 +31,13 @@ class Toxe {
     return paddedSamples
   }
 
-  async encode(sample, samples) {
-    const sampleIds = await this.encodeSample(sample);
-    const paddedSamples = await this.encodeSamples(samples);
+  async encode (sample, samples) {
+    const { bos = 1, eos = 2 } = this.config
+    const sampleIds = await this.encodeSample(sample)
+    const paddedSamples = await this.encodeSamples(samples)
     const ids = paddedSamples
-      .flatMap(ids => [1, ...sampleIds, 2, ...ids, 2]);
-    return ids;
+      .flatMap(ids => [bos, ...sampleIds, eos, ...ids, eos])
+    return ids
   }
 }
 
