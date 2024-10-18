@@ -1,10 +1,15 @@
-/// <reference types="node" />
 declare module "toxe" {
+  interface SentencePiece {
+    encodeIds(text: string): number[];
+  }
+
   export class Toxe {
-    private modelPath;
-    private spp;
-    constructor(modelPath: string): Toxe;
-    loadModel(): Promise<typeof spp>;
+    private modelPath: string;
+    private spp: SentencePiece;
+
+    constructor(modelPath: string);
+
+    loadModel(): Promise<SentencePiece>;
     pad(length: number, ids: number[]): number[];
     encodeSample(sample: string): Promise<number[]>;
     encodeSamples(samples: string[]): Promise<number[][]>;
